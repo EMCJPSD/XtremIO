@@ -89,7 +89,7 @@ def get_performance(c_name):
 		c_string=""
 		for j in range(len(met)):
 			if j==0:
-				c_string=strtime+", "+c_result['content'][met[j]]
+				c_string=strtime+", "+str(c_result['content'][met[j]])
 			else:
 				c_string=c_string+", "+str(c_result['content'][met[j]])
 		print>>c_file,c_string
